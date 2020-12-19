@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 5</title>
+    <title>Homework 6</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -417,6 +417,43 @@
             <button type="button" class="close-btn" data-modal-close><svg width="18px" height="18px">
                 <use href="./images/sprite.svg#icon-close-black"></use>
             </svg></button>
+            <form action="#" class="modal-form">
+                <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+                <label for="name" class="modal-form-fild">
+                    Имя
+                   <span>
+                       <input type="text" name="name" class="modal-form-input">
+                       <svg class="input-icon">
+                           <use href="./images/sprite.svg#icon-person-black" width="18px" height="18px"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label for="name-tel" class="modal-form-fild">
+                    Телефон
+                    <span>
+                        <input type="text" name="name-tel" class="modal-form-input">
+                        <svg class="input-icon">
+                            <use href="./images/sprite.svg#icon-phone-black" width="18px" height="18px"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label for="name-email" class="modal-form-fild">
+                    Почта
+                    <span>
+                        <input type="text" name="name-email" class="modal-form-input">
+                        <svg class="input-icon">
+                            <use href="./images/sprite.svg#icon-email-black" width="18px" height="18px"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label for="name-message" class="">
+                    <textarea class="modal-form-message" name="name-message" placeholder="Введите текст"></textarea>
+                </label>
+                <input id="user-policy" type="checkbox" name="" value="">
+                <label for="user-policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия
+                    договора</a></label>
+                    <button type="submit" class="modal__hero-button">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
