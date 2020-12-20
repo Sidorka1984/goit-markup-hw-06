@@ -409,15 +409,21 @@
                         </ul>            
             </div>
             <form action="" class="footer-form">
-
-                <label class="footer-form-fild">
-                    <b class="footer-form-title">Подпишитесь на рассылку</b>
-                    <textarea class="modal-form-message" name="name-message" placeholder="E-mail"></textarea>       
+                <b class="footer-form-title">Подпишитесь на рассылку</b>
+                <span class="footer-form-fild">
+                    <label>
+                    <input class="footer-form-message" type="text" name="user-email" placeholder="E-mail">
                 </label>
-            </form>
-        </div>           
+                <button type="submit" class="footer-button">Подписаться<svg class="send-icon">
+                        <use href="./images/sprite.svg#icon-icon-send"></use>
+                    </svg>
+                </button></span>
+            </form>              
+               
+        </div>          
     
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close><svg width="18px" height="18px">
