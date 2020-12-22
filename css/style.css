@@ -583,7 +583,7 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
   display: flex;
   width: 358px;
   padding: 15px 16px;
-  margin-right: 12px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -599,7 +599,7 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
-  margin-left: auto;
+  margin-left: 12px;
   margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -760,6 +760,7 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
   top: 0;
   width: 100%;
   height: 100%;
+  display: flex;
   background-color: rgba(0, 0, 0, 0.1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -810,7 +811,6 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
 }
 .modal-title {
   font-family: var(--main-font);
-
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -822,6 +822,8 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-bottom: 12px;
 }
 .modal-form-fild {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
   font-family: var(--main-font);
   font-weight: 400;
@@ -889,9 +891,10 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
   background-size: contain;
   background-origin: border-box;
 }
-.modal-form-policy:focus {
-}
 .modal-form-policy-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   font-family: var(--main-font);
   font-weight: 400;
@@ -911,18 +914,20 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accent-policy-link {
+  display: flex;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: var(--accent-color);
+  margin-left: 8px;
 }
-.modal__form-button {
-  display: block;
+
+.modal-form-button {
+  display: flex;
   cursor: pointer;
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 10px 56px;
@@ -935,8 +940,8 @@ flex-basis: calc(100% / 4 - var(--card-set-gap));
   background-color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form-button:hover,
-.modal__form-button:focus {
+.modal-form-button:hover,
+.modal-form-button:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
